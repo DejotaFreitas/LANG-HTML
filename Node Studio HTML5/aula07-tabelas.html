@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabelas</title>
+
+  </head>
+  <body>
+    <h1>Tabela</h1>
+
+    <table>
+      <caption>Titulo ou legenda da tabela</caption>
+
+<!-- Referenciando coluna  por posição-->
+      <colgroup>
+        <col class="nome"></col>
+        <col class="email"></col>
+        <col class="telefone"></col>
+        <col class="cargo"></col>
+      </colgroup>
+
+<!-- Cabeçario da tabela-->
+      <thead>
+        <!-- Linha-->
+      <tr>
+        <!-- Colunas de cabeçario (negrito e alinhado ao centro)-->
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Cargo</th>
+      </tr>
+    </thead>
+
+<!-- Corpo ou dados da tabela-->
+    <tbody>
+        <!-- Linha-->
+      <tr>
+          <!-- Coluna de Dados (normal e alinhado a esquerda)-->
+        <td>Joao</th>
+        <td>joao@email.com</th>
+        <td>5157151541</th>
+        <td rowspan="2">coluna que ocupa 2 linhas</th>
+      </tr>
+
+
+      <tr>
+        <td>Maria</th>
+        <td>maria_jose@email.com</th>
+        <td>88481881</th>
+      </tr>
+    </tbody>
+
+  <!-- Rodapé da tabela-->
+    <tfoot>
+      <tr>
+        <td colspan="4">Linha que ocupa 4 colunas</th>
+      </tr>
+    </tfoot>
+
+    </table>
+
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Cadastro</legend>
+      <form class="" action="index.html" method="post">
+
+        Nome
+        <input type="text" name="nome" placeholder="seu nome..."required autofocus>
+        <br><br>
+        Senha
+        <input type="password" name="senha" placeholder="sua senha..." required >
+        <br><br>
+        Email
+        <input type="email" name="email" placeholder="exemplo@gmail.com" required >
+        <br><br>
+        Telefone
+        <input type="tel" name="telefone" >
+        <br><br>
+        Sexo
+        <input type="radio" name="sexo" value="masculino" required > Masculino
+        <input type="radio" name="sexo" value="feminino" > Feminino
+        <br><br>
+        Possui
+        <input type="checkbox" name="sonho" value="bike" > Bike
+        <input type="checkbox" name="sonho" value="moto" > Moto
+        <input type="checkbox" name="sonho" value="carro" > Carro
+        <br><br>
+        Quantidade
+        <input type="number" name="qnt" value="1" min="1" max="10" >
+        <input type="range" name="quantidade">
+        <br><br>
+        Arquivo ou Imagem
+        <input type="file" name="arquivoouimagem" >
+        <br><br>
+        URL
+        <input type="url" name="url" >
+        <br><br>
+        Pesquisa
+        <input type="search" name="psquisa">
+        <br><br>
+        Data e Hora
+        <input type="datetime-local" name="datahira" >
+        <br><br>
+        Data
+        <input type="date" name="data" >
+        <br><br>
+        Hora
+        <input type="time" name="hora" >
+        <br><br>
+        Mês e Ano
+        <input type="month" name="mesano" >
+        <br><br>
+        Semana
+        <input type="week" name="semana" >
+        <br><br>
+        Mensagem  <br>
+        <textarea name="mensagem" rows="10" cols="40" maxlength="3"></textarea>
+        <br><br>
+        Botão
+        <button type="button" name="botao">
+          Botão com imagem
+          <img src="img\arrozunio.jpg" alt="imagem" />
+        </button>
+        <br><br>
+        Carros
+        <select class="veiculo" name="">
+          <optgroup label="Carros Foda!">
+            <option value="camaro"> Camaro </option>
+            <option value="mustang" selected> Mustang </option>
+          </optgroup>
+          <optgroup label="Carros Poser">
+            <option value="ranger"> Ranger </option>
+            <option value="veloster"> Veloster </option>
+          </optgroup>
+        </select>
+        <br><br>
+        Escolha Uma opção
+        <input type="text" name="texto" list="lista-opiçoes">
+        <datalist id="lista-opiçoes">
+          <option value="option1">option1</option>
+          <option value="option2">option2</option>
+          <option value="option3">option3</option>
+        </datalist>
+        <br><br><br>
+        <input type="submit" name="btn-enviar" value="Salvar">
+        <input type="reset" value="Limpar" >
+        <input type="submit" value="Submeter para otra pagina" formaction="outra.php">
+        <input type="submit" value="Submeter para otra pagina 2" formaction="outra2.php">
+      </form>
+    </fieldset>
+  </body>
+</html>
